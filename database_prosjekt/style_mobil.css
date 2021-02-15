@@ -1,0 +1,133 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    width:  100%;
+    /*margin-left: 40px;*/
+
+}
+
+/*Alle nettsidene*/
+
+footer{
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    text-align: center;
+}
+
+.footer_logo{
+    padding: 0;
+}
+
+footer>section{
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Index*/
+
+
+.index_text{
+    padding: 60px;
+    margin: 0;
+}
+
+
+.index_bilder{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.index_bilder_div{
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0;
+}
+
+
+.index_bilder_img{
+    position: static;
+    width: 100%;
+    height: 300px;
+}
+
+.index_bilder_div>p{
+    position: static;
+    width: auto;
+    height: auto;
+    border: none;
+    padding: 0;
+    border-bottom: 2px solid lightgrey;
+    padding: 40px;
+}
+
+
+/*Periodesystem*/
+
+.periodesystem_øvre{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.periodesystem_nedre{
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding: 0;
+}
+
+.span_div{
+    display: none;
+}
+
+#periodesystem_popup{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 22px;
+}
+
+#periodesystem_popup>button{
+    font-size: 20px;
+}
+
+.periodesystem_søkebar{
+    padding-bottom: 50px;
+}
+
+
+/*Login*/
+
+.login_main{
+    position: static;
+    transform: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+
+
+/* Omergning */
+
+
+.omergning_main{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+}
+
+.omergning_main>section{
+    margin: 30px;
+}
+
+
+/**/

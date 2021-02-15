@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/gif/png" href="bilder/chemistry_bottle.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 601px)" href="style_mobil.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAJA_K3-Sb74CYe3taZgYkFcFIdTb1kHmU",
+            authDomain: "kontaktliste-27427.firebaseapp.com",
+            databaseURL: "https://kontaktliste-27427.firebaseio.com",
+            projectId: "kontaktliste-27427",
+            storageBucket: "kontaktliste-27427.appspot.com",
+            messagingSenderId: "358665673371"
+          };
+          firebase.initializeApp(config);
+        </script>
+
+    </head>
+    <body>
+
+        <main class="login_main">
+            <section class="login_login">
+                <h3>Logg inn</h3>
+                <ul>
+                    <li><input type="text" placeholder="Brukernavn" id="login_brukernavn"></li>
+                    <li><input type="text" placeholder="Passord" id="login_passord"></li>
+                    <li><button type="button" id="login_btn">Logg inn</button></li>
+                </ul>
+            </section>
+
+            <section class="login_registrering">
+                <h3>Registrer deg</h3>
+                <ul>
+                    <li><input type="text" placeholder="Brukernavn" id="reg_brukernavn"></li>
+                    <li><input type="text" placeholder="Passord" id="reg_passord"></li>
+                    <li><input type="text" placeholder="Bekreft passord" id="reg_bekreft_passord"></li>
+                    <li><button type="button" id="reg_btn">Registrer</button></li>
+                </ul>
+            </section>
+
+        </main>
+
+        <script src="./main.js" charset="utf-8"></script>
+        </script>
+    </body>
+</html>

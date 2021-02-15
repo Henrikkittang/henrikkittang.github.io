@@ -1,0 +1,260 @@
+
+body{
+    /*background-color: #ecf0f3;*/
+    margin: 0;
+    font-family: "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #fefdfc;
+}
+
+/**/
+/* nav/header */
+
+nav{
+    width: 100%;
+    background-color: white;
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    border-bottom: black solid 2px;
+    background-color: white;
+
+    box-shadow: 0 2px 10px -1px rgba(0,20,50,.1);
+}
+
+.nav_wrapper>a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#meny_btn{
+    display: none;
+}
+
+.nav_wrapper>a:hover{
+    text-decoration: underline;
+    background-color: white;
+}
+
+/* index */
+
+
+.forside_tekst{
+    position: fixed;
+    z-index: -10;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 160px;
+    display: none;
+
+    text-align: center;
+    color: white;
+}
+
+.forside_tekst>h1{
+    font-size: 40px;
+}
+
+.forside_tekst>p{
+    font-size: 30px;
+}
+
+.forside_animasjon{
+    z-index: -20;
+    position: relative;
+    width: 100%;
+    height: 560px;
+    background-color: white;
+}
+
+
+.star{
+    width: 3px;
+    height: 3px;
+    background-color: grey;
+
+    position: absolute;
+    opacity: 0;
+}
+
+.forside_info{
+    background-color: #7011C4;
+    padding: 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+.forside_info>p{
+    font-size: 18px;
+}
+
+.forside_hovedprosjekter_overskrift{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.forside_hovedprosjekter{
+    margin: 20px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.hovedprosjekter_lenke{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    background-color: lavender;
+    border-radius: 18px;
+
+    transform: scale(1.0);
+}
+
+.hovedprosjekter_lenke:hover{
+    transform: scale(1.05);
+    box-shadow: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 100;
+
+}
+
+.hovedprosjekter_div{
+    padding: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    background-color: inherit;
+}
+
+.hovedprosjekter_div>h1{
+    font-size: 26px;
+}
+
+.hovedprosjekter_div>img{
+    width: 110px;
+    height: 110px;
+}
+
+.hovedprosjekter_div>p{
+    font-size: 20px;
+}
+
+/* p5 prosjekter */
+
+.forside_p5{
+    margin-top: 100px;
+    background-color:  inherit;
+    text-align: center;
+    color: black;
+
+}
+
+.forside_p5_beskrivelse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: white solid 2px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.forside_p5_beskrivelse>p{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 22px;
+}
+
+.forside_p5_overskrift>h1{
+    font-size: 30px;
+}
+
+.forside_p5_innhold{
+    margin-top: -80px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.p5_prosjekt_div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: lightseagreen ;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+.p5_prosjekt_div:hover{
+    box-shadow: 0 0 0 2px rgb(0, 0, 0, 1);
+}
+
+.p5_prosjekt_div>img{
+    border-radius: 66px;
+    grid-row: span 3;
+    width: 200px;
+
+    height: 200px;
+    padding: 50px;
+}
+
+.p5_prosjekt_div>h1{
+    grid-column: span 2;
+    grid-row: span 1;
+    font-size: 26px;
+    margin-top: 35px;
+    border-bottom: black solid 2px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.p5_prosjekt_div>p{
+    grid-column: span 2;
+    grid-row: span 2;
+    font-size: 20px;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+/* Digitale signaler */
+
+.ds_main{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ds_main>section{
+    margin-top: 80px;
+}
+
+.ds_main>section>p{
+    font-size: 20px;
+}
+
+.ds_forsidebilde{
+    width: auto;
+    height: 300px;
+}
+
+
+/**/

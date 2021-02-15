@@ -1,0 +1,463 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    /*margin-left: 40px;*/
+    background-color: #ecf0f3;
+}
+
+/*For alle nettsidene*/
+
+.side_nav{
+    display: flex;
+    flex-direction: column;
+    background-color: #CFE8F5;
+    /*width: 300px;*/
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    z-index: 100;
+    transition: all ease-in-out 280ms;
+}
+
+
+#toggle_knapp{
+    background-color: inherit;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    text-align: center;
+}
+
+.side_nav>img{
+    display: block;
+    width: 150px;
+    margin-top: 50px;
+    align-self: center;
+}
+
+.side_nav>a{
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  padding: 6px;
+  z-index: 2;
+}
+
+.side_nav>a:first-of-type{
+  margin-top: 40px;
+}
+
+.side_nav>a:hover{
+    text-decoration: underline;
+}
+
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 60px;
+    grid-gap: 10px;
+    margin-top: 30px;
+    background-color: rgb(30, 30, 50);
+    color: white;
+    font-size: 25px;
+    height: 300px;
+    text-align: left;
+}
+
+
+footer>section>table>thead>tr>th>a:-webkit-any-link{
+  font-size: 35px;
+}
+
+
+.footer_logo{
+  padding-left: 20px;
+}
+
+.footer_logo>table{
+  padding-left: 45px;
+}
+
+.footer_hendelser, .footer_hendelser>a{
+  padding-bottom: 5px;
+  color: rgb(156, 142, 108);
+  text-decoration: none;
+}
+
+.footer_hendelser>a:hover{
+  color: rgba(106, 92, 68, 0.6);
+}
+
+/*Index*/
+
+.index_main{
+    font-family: "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    width: inherit  ;
+}
+
+.forsidebilde>img{
+    width: 100%;
+    height: 350px;
+}
+
+.forsidebilde_tekst_div{
+  position: absolute;
+  font-family: Futura;
+  z-index: 1;
+  top: 10%;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.front_img_tekst{
+  position: relative;
+  color: black;
+  font-size: 70px;
+  animation: index_tekst_animasjon 3s ease;
+  opacity: 1;
+  letter-spacing: 8px;
+  color: black;
+}
+
+@keyframes index_tekst_animasjon{
+  0%{
+    opacity: 0;
+    letter-spacing: 0;
+  }
+
+  25%{
+    opacity: 1;
+  }
+
+  30%{
+    letter-spacing: 25px;
+  }
+
+  85%{
+    letter-spacing: 8px;
+  }
+}
+
+
+.index_text{
+    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.index_text>h1{
+    font-size: 34px;
+}
+
+.index_text>p{
+    font-size: 18px;
+}
+
+#index_avsnitt_halv{
+    display: inline;
+}
+
+#index_avsnitt_hel{
+    display: inline;
+}
+
+#index_text_toggle{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#index_text_toggle:hover{
+    text-decoration: underline;
+}
+
+.index_bilder_div:nth-child(even){
+    text-align: right;
+}
+
+.index_bilder_div{
+    position: relative;
+    padding: 60px;
+    width: 90%;
+}
+
+.index_bilder_img{
+    width: 700px;
+    height: 450px;
+}
+
+
+.index_bilder_div>p{
+    background-color: white;
+    border: 4px solid lightblue;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+
+    z-index: 10;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+}
+
+.index_bilder_div:nth-child(even)>p{
+    left: 15%;
+}
+
+
+/*Periodesystem*/
+
+.periodesystem_main{
+    padding: 50px;
+    text-align: center;
+}
+
+.periodesystem_øvre{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-gap: 6px;
+    width: auto;
+}
+
+.periodesystem_nedre{
+    display: grid;
+    grid-gap: 6px;
+    width: auto;
+    grid-template-columns: repeat(14, 1fr);
+    margin-top: 20px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+
+.grunnstoff{
+    text-align: center;
+}
+
+.grunnstoff>button{
+    background-color: inherit;
+    border: none;
+    width: 100%;
+}
+
+#periodesystem_søkefelt{
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid lightgrey;
+    padding: 4px;
+}
+
+#periodesystem_søkeknapp{
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    padding: 4px;
+}
+
+#periodesystem_popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    border: solid 4px black;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+#valgtGrunnstoff_liste{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#periodesystem_popup>button{
+    background-color: inherit;
+    border: none;
+}
+
+#periodesystem_popup>button:hover{
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Login*/
+
+
+.login_main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgrey;
+    border: 2px solid black;
+    text-align: center;
+    padding: 15px;
+}
+
+.login_main>section>ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login_main>section>ul>li{
+    padding: 5px;
+}
+
+.login_registrering{
+    margin-top: 60px;
+}
+
+
+
+/*Forum*/
+
+.forum_main{
+    padding: 50px;
+}
+
+.forum_main>h1{
+    font-size: 40px;
+    margin: auto;
+    width: 120px;;
+}
+
+.forum_sortering{
+    text-align: center;
+    padding: 20px;
+}
+
+.forum_sortering>button{
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    padding: 4px;
+    font-size: 18px;
+}
+
+
+.melding{
+    padding: 10px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    background-color: lightblue;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.forum_stemme_knapper{
+    display: flex;
+    flex: row;
+    height: 40px;
+}
+
+.forum_stemme_knapper>div{
+    display: flex;
+    flex: row;
+    margin-right: 40px;
+}
+
+.forum_input{
+    display: flex;
+    flex-direction: row;
+}
+
+#forum_inpFelt{
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 20px;
+    min-height: 30px;
+    border: 2px solid lightgrey;
+    outline: none;
+    width: 100%;
+}
+
+
+#forum_inpBtn{
+    border: 2px solid lightblue;
+    background: white;
+    border-radius: 16px;
+    font-size: 18px;
+    outline: none;
+    padding: 8px;
+}
+
+#forum_inpBtn:active{
+    background-color: lightblue;
+}
+
+#stemme_btn{
+    margin-right: 6px;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    outline: none;
+}
+
+#stemme_btn>i{
+    font-size: 26px;
+}
+
+
+/* Omergning */
+
+
+.omergning_main{
+    display: flex;
+    padding: 120px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.omergning_main>section{
+    margin: 50px;
+}
+
+.omregnings_knapper>button{
+    border-radius: 5px lightblue;
+    outline: none;
+    background-color: white;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+
+#omregning_antall{
+    width: 35px;
+}
+
+.omregning_input_div>input, #mol_input{
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid lightgrey;
+    padding: 4px;
+}
+
+.omregning_resultat>div>p{
+    display:inline;
+}
+
+
+
+/**/

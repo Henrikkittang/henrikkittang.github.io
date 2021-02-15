@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Algorithms and models</title>
+        <link rel="stylesheet" href="styles/subjects.css">
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <nav>
+            <button type="button" id="prev_subject_btn"> <i class="fa fa-arrow-circle-left arrows"></i> </button>
+
+            <a href="#">Basics</a>
+            <a href="#">Implementation</a>
+            <a href="#">Data structures</a>
+            <a href="#">Comapring laungages</a>
+            <a href="#">Python libraries</a>
+
+            <button type="button" id="next_subject_btn"> <i class="fa fa-arrow-circle-right arrows"></i> </button>
+        </nav>
+
+        <header>
+
+            <h1>Basic algorithms and models</h1>
+
+            <div class="subjects_index">
+                <ul>
+                    <li>Mathematical models</li>
+                    <li> <a href="prog_imp.html#abc_formula_div">ABC-formula</a> </li>
+                    <li> <a href="prog_imp.html#prime_and_factor_div">Prime numbers and factorization</a> </li>
+                    <li> <a href="prog_imp.html#pytagoras_div">Pytagoras</a> </li>
+                    <li> <a href="prog_imp.html#func_ana_div">Functional analysis</a> </li>
+                    <li> <a href="prog_imp.html#differentiate_div">Differentiate</a> </li>
+                    <li> <a href="prog_imp.html#finding_squareroot_div">Finding square root</a> </li>
+                </ul>
+
+                <ul>
+                    <li>Mathematical models</li>
+                    <li> <a href="prog_imp.html#abc_formula_div">ABC-formula</a> </li>
+                    <li> <a href="prog_imp.html#prime_and_factor_div">Prime numbers and factorization</a> </li>
+                    <li> <a href="prog_imp.html#pytagoras_div">Pytagoras</a> </li>
+                    <li> <a href="prog_imp.html#func_ana_div">Functional analysis</a> </li>
+                    <li> <a href="prog_imp.html#differentiate_div">Differentiate</a> </li>
+                    <li> <a href="prog_imp.html#finding_squareroot_div">Finding square root</a> </li>
+                </ul>
+
+                <ul>
+                    <li>Mathematical models</li>
+                    <li> <a href="prog_imp.html#abc_formula_div">ABC-formula</a> </li>
+                    <li> <a href="prog_imp.html#prime_and_factor_div">Prime numbers and factorization</a> </li>
+                    <li> <a href="prog_imp.html#pytagoras_div">Pytagoras</a> </li>
+                    <li> <a href="prog_imp.html#func_ana_div">Functional analysis</a> </li>
+                    <li> <a href="prog_imp.html#differentiate_div">Differentiate</a> </li>
+                    <li> <a href="prog_imp.html#finding_squareroot_div">Finding square root</a> </li>
+                </ul>
+            </div>
+
+        </header>
+
+        <main>
+
+            <section>
+                <div id="abc_formula_div">
+                    <h2>ABC-formula</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="exampel_code">
+
+                        <div class="exampel_code_btns">
+                            <button type="button" class="python_btn">Python</button>
+                            <button type="button" class="cpp_btn">C++</button>
+                            <button type="button" class="js_btn">Javascript</button>
+                        </div>
+
+                        <pre class="prettyprint linenums python_text">
+                            <code>    from math import sqrt
+
+                                a1 = float(input("a value: "))
+                                b1 = float(input("b value: "))
+                                c1 = float(input("c value: "))
+
+
+                                def abc_formula(a, b, c):
+                                    if b**2 < 4*a*c:
+                                        print("no solutions")
+                                        return
+
+                                    x1 = (-1 * b + sqrt(b**2 - 4*a*c)) / 2*a
+                                    x2 = (-1 * b - sqrt(b**2 - 4*a*c)) / 2*a
+
+                                    return x1, x2
+
+
+                                print(abc_formula(a1, b1, c1))
+
+                            </code>
+                        </pre>
+
+                        <pre class="prettyprint linenums cpp_text">
+                            <code>    #include &#60iostream&#62
+                                #include &#60tuple&#62
+                                using namespace std;
+
+                                tuple&#60float, float&#62 abc_formula(float a, float b, float c) {
+                                	float x1 = 0;
+                                	float x2 = 0;
+
+                                        // If we get a negative value inside the square root, then there are no solutions
+                                	if (pow(b, 2) < 4 * a*c) {
+                                		cout << "no solution ";
+                                	}
+                                	else {
+                                		x1 = (-1 * b + sqrt(pow(b, 2) - 4 * a*c)) / 2 * a;
+                                		x2 = (-1 * b - sqrt(pow(b, 2) - 4 * a*c)) / 2 * a;
+
+                                	}
+                                	return make_tuple(x1, x2);
+                                }
+
+                                int main() {
+
+                                	float x1, x2;
+
+                                	tie(x1, x2) = abc_formula(1, 2, 3);
+
+                                	cout << x1 << ", " << x2 << endl;
+
+                                	cin.get();
+
+                                	return 0;
+                                }
+                            </code>
+                        </pre>
+
+                        <pre class="prettyprint linenums js_text">
+                            <code>    sqrt = Math.sqrt;
+
+                                // Get some sort of input and assign them to these variables
+                                // For simplicity, we just hard-coded some values into the program
+                                const a1 = 1;
+                                const b1 = 2
+                                const c1 = -3;
+
+                                function abc_formula(a, b, c) {
+                                    if(b**2 < 4*a*c){
+                                        console.log("no solutions");
+                                        return;
+                                    }
+
+                                    let x1 = (-1 * b + sqrt(b**2 - 4*a*c)) / 2*a
+                                    let x2 = (-1 * b - sqrt(b**2 - 4*a*c)) / 2*a
+
+                                    return [x1, x2]
+                                }
+
+                                console.log(abc_formula(a1, b1, c1))
+
+
+                            </code>
+                        </pre>
+
+                    </div>
+                </div>
+
+                <div id="func_ana_div">
+                    <h2>Functional analysis</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div id="prime_and_factor_div">
+                    <h2>Finding prime numbers and factorization</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div id="pytagoras_div">
+                    <h2>Pytagoras</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div id="differentiate_div">
+                    <h2>Differentiate</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div id="finding_squareroot_div">
+                    <h2>Finding square root</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </section>
+        </main>
+        <script src="subjects.js" charset="utf-8"></script>
+    </body>
+</html>

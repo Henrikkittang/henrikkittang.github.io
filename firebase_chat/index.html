@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyBs15ExAQUH5ddAdNv7XVrLrrDQn1hZo88",
+            authDomain: "firstproject-d06ea.firebaseapp.com",
+            databaseURL: "https://firstproject-d06ea.firebaseio.com",
+            projectId: "firstproject-d06ea",
+            storageBucket: "firstproject-d06ea.appspot.com",
+            messagingSenderId: "573121449077"
+          };
+          firebase.initializeApp(config);
+        </script>
+    </head>
+    <body>
+
+    <input type="text" id="inpNavn">
+    <input type="text" id="inpTekst">
+    <button type="button" id="inpBtn">Send</button>
+
+    <main id="main">
+
+    </main>
+
+    <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>

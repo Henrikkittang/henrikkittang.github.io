@@ -1,0 +1,130 @@
+body {
+		font-family: "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+		padding: 0;
+		margin: 0;
+}
+
+/*header*/
+.banner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		border-bottom: 0.5px solid lightgrey;
+		background-color: white;
+		/*ADDBE9, 82A0EC, DEF1F3, E4F2F3*/
+		z-index: 4;
+		height: 64px;
+}
+
+.banner > a {
+		color: black;
+		text-decoration: none;
+		padding: 20px;
+		font-size: 20px;
+}
+
+.banner > a:hover {
+		text-decoration: underline;
+}
+
+/*-------------------------*/
+.prog_main {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+}
+
+.prog_info {
+		grid-column: span 2;
+		width: 100%;
+		height: 100%;
+		background-color: #0c6ac7;
+		color: white;
+}
+
+.prog_info p > a {
+		text-decoration: none;
+		color: white;
+		font-size: 20px;
+		padding-left: 20px;
+}
+
+.prog_info p > a:hover {
+		text-decoration: underline;
+}
+
+.prog_info ul {
+		list-style: none;
+		margin-right: 40px;
+}
+
+.prog_info ul li p {
+		font-size: 17px;
+}
+
+.prog_info ul li h1 {
+		font-size: 35px;
+}
+
+.prog_main_content {
+		grid-column: span 5;
+		width: 100%;
+		height: auto;
+		background-color: #f7f7f7;
+		display: grid;
+		justify-content: center;
+		grid-gap: 20px;
+		padding-top: 50px;
+}
+
+.prog_main_content a {
+		color: black;
+		text-decoration: none;
+}
+
+.prog_main_content a > div {
+		width: 600px;
+		height: 130px;
+		background-color: white;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+}
+
+.prog_main_content a > div img {
+		margin: 0;
+		padding: 0;
+		grid-column: span 1;
+		grid-row: span 3;
+		align-self: center;
+		justify-self: center;
+		border-radius: 15px;
+		background-color: orange;
+		width: 100px;
+		height: 100px;
+}
+
+.prog_main_content a > div h1 {
+		margin-top: 20px;
+		margin-bottom: 0px;
+		padding: 0;
+		grid-column: span 2;
+		grid-row: span 1;
+		color: black;
+		text-decoration: none;
+}
+
+.prog_main_content a > div p {
+		margin-top: 10px;
+		margin-right: 30px;
+		padding: 0;
+		color: grey;
+		grid-column: span 2;
+		grid-row: span 2;
+		font-size: 14px;
+}
+
+.prog_main_content div:hover {
+		outline: solid 2px peru;
+}

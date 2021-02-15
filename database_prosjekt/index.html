@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Hjem</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/gif/png" href="bilder/chemistry_bottle.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 601px)" href="style_mobil.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAJA_K3-Sb74CYe3taZgYkFcFIdTb1kHmU",
+            authDomain: "kontaktliste-27427.firebaseapp.com",
+            databaseURL: "https://kontaktliste-27427.firebaseio.com",
+            projectId: "kontaktliste-27427",
+            storageBucket: "kontaktliste-27427.appspot.com",
+            messagingSenderId: "358665673371"
+          };
+          firebase.initializeApp(config);
+        </script>
+
+    </head>
+    <body>
+
+        <nav class="side_nav">
+            <button type="button" id="toggle_knapp">
+                <img src="bilder/hamburger_icon.png">
+            </button>
+
+            <img src="bilder/chemistry_bottle.png">
+
+            <a href="index.html">Hjem</a>
+            <a href="periodesystem.html">Periodesystemet</a>
+            <a href="login.html">Forum</a>
+            <a href="omregning.html">Kalkulator</a>
+        </nav>
+
+        <main class="index_main">
+
+            <div class="forsidebilde">
+                <div class="forsidebilde_tekst_div">
+                    <p class="front_img_tekst">Kjemi</p>
+                </div>
+                <img src="bilder/index_forsidebilde.jpg" class="index_forsidebilde"></img>
+            </div>
+
+            <section class="index_text">
+                <h1>Hva er kjemi?</h1>
+                <p id="index_avsnitt_halv"> Stoffene ble opprinnelig funnet i
+                    naturen, men etter hvert er stadig flere blitt fremstilt
+                    kunstig. I august 2015 er det registrert 101 millioner
+                    organiske og uorganiske kjemiske forbindelser, og antallet
+                    øker for tiden med ca. 15 000 per dag. Opprinnelig foregikk
+                    alle kjemiske eksperimenter på makronivå, der man så på
+                    hvordan reaksjoner artet seg og hvordan kjemiske stoffer
+                    oppførte seg. Etterhvert som man forstod mer om hva som
+                    foregår på mikronivå, altså på molekyl- og atomnivå, har man
+                    tolket eksperimentene i et samspill mellom de to nivå.
+                    Kjemiens eget språk, med egne symboler og notasjoner, er
+                    viktig å lære om man skal forstå dagens kjemi. </p>
+                <p id="index_avsnitt_hel"> Arbeidsmåten i kjemi har forandret
+                    karakter i løpet av de siste femti år. Opprinnelig lærte man
+                    om nye stoffer ved å la dem reagere med andre stoffer. Man
+                    lærte med andre ord kjemi ved å drive med kjemi. I dag bruker
+                    man i stedet forskjellige instrumenter med en innebygget
+                    datamaskin hvor målingene bearbeides. Med kromatografi kan
+                    stoffer i en blanding skilles fra hverandre og identifiseres.
+                    Med andre instrumenter kan man bestemme hvordan atomene i
+                    stoffene er bundet sammen (spektroskopi og diffraksjon).</p>
+                <button type="button" id="index_text_toggle">Vis mer</button>
+            </section>
+
+            <hr>
+
+            <section class="index_bilder">
+                <div class="index_bilder_div">
+                    <img src="bilder/mikroskop.jpg" class="index_bilder_img">
+                    <p>
+                        Opprinnelig lærte man om nye stoffer ved å la dem reagere
+                        med andre stoffer. Man lærte med andre ord kjemi ved å
+                        drive med kjemi. I dag bruker man i stedet forskjellige
+                        instrumenter med en innebygget datamaskin hvor målingene
+                         bearbeides. Med kromatografi kan stoffer i en blanding
+                         skilles fra hverandre og identifiseres. Med andre
+                         instrumenter kan man bestemme hvordan atomene i stoffene
+                         er bundet sammen (spektroskopi og diffraksjon).</p>
+                </div>
+
+                <div class="index_bilder_div">
+                    <img src="bilder/tåkegass.jpg" class="index_bilder_img">
+                    <p>
+                        I en kjemisk reaksjon blir det dannet nye forbindelser
+                        (produkter) som er forskjellige fra utgangsforbindelsene
+                        (reaktanter). Antall atomer før eller etter reaksjonen
+                        er det samme, men atomene er bundet forskjellig i
+                        reaktantene og produktene. Når for eksempel karbon (C)
+                        brenner i luft, reagerer karbonet med oksygen (O) i
+                        luften til karbondioksid (CO2), som har helt andre
+                        egenskaper enn utgangsstoffet.</p>
+                </div>
+
+                <div class="index_bilder_div">
+                    <img src="bilder/blander.jpg" class="index_bilder_img">
+                    <p>
+                        Ordet kjemi kan komme fra det greske ordet for å helle
+                        (khymeia), som ble brukt av greske apotekere i Alexandria.
+                        Ordet ligner dessuten på det egyptiske ordet chem, 'svart',
+                        fra den svarte, fruktbare jorden ved Nilen. Araberne
+                        føyde til sin bestemte artikkel «al», som gjenfinnes i
+                        ordet alkymi.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section class="footer_logo">
+              <div> <img src="bilder/chemistry_bottle.png"> </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th> <a href="https://www.facebook.com/" target="_blank" class="ikon_link"> <i class="fa fa-facebook-square" > </i> </a> </th>
+                    <th> <a href="https://twitter.com/" target="_blank" class="ikon_link"> <i class="fa fa-twitter-square" ></i> </a> </th>
+                    <th> <a href="https://www.instagram.com/" target="_blank" class="ikon_link"> <i class="fa fa-instagram"></i> </a> </th>
+                  </tr>
+                </thead>
+              </table>
+            </section>
+
+            <section>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Navigasjon</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr> <td class="footer_hendelser"> <a href="index.html">Hjem</a> </td> </tr>
+                  <tr> <td class="footer_hendelser"> <a href="periodesystem.html">Periodesystemet</a> </td> </tr>
+                  <tr> <td class="footer_hendelser"> <a href="login.html">Forum</a> </td> </tr>
+                  <tr> <td class="footer_hendelser"> <a href="omregning.html">Kalkulator</a> </td> </tr>
+                </tbody>
+              </table>
+            </section>
+            
+            <section>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr> <td class="footer_hendelser"> Elias Smithsvei 15 </td> </tr>
+                  <tr> <td class="footer_hendelser"> 1337 Sandvika </td> </tr>
+                  <tr> <td class="footer_hendelser"> 67 57 56 00 </td> </tr>
+                </tbody>
+              </table>
+            </section>
+          </footer>
+
+    <script src="./main.js" type="text/javascript"></script>
+    </body>
+</html>

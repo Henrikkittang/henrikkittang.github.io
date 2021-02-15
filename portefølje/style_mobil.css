@@ -1,0 +1,116 @@
+
+nav{
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    border-bottom: none;
+}
+
+.nav_wrapper{
+    display: none;
+}
+
+nav>div{
+    border-bottom: solid lightgrey 1px;
+    height: 50px;
+}
+
+nav>div:last-of-type{
+    display: none;
+}
+
+#meny_btn{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    height: 100%;
+
+    background-color: inherit;
+    border: none;
+    outline: none;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+}
+
+#meny_btn:hover{
+    text-decoration: underline;
+}
+
+
+
+/* index */
+
+.forside_p5_beskrivelse{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.forside_tekst{
+    margin-top: 80px;
+    top: -5px;
+}
+
+.forside_info{
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 340px;
+
+}
+
+.forside_hovedprosjekter{
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 60px;
+}
+
+
+.forside_p5_innhold{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.forside_p5_innhold>div{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+
+.forside_p5_innhold>div>img{
+    grid-row: span 1;
+    margin-left: 80px;
+}
+
+.forside_p5_innhold>div>h1{
+    grid-row: span 1;
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.forside_p5_innhold>div>p{
+    grid-row: span 1;
+
+    padding: 40px;
+    padding-top: 0;
+
+}
+
+/* Digitale signaler */
+
+.ds_main{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.ds_forsidebilde{
+    height: 200px;
+}
+
+
+
+/**/

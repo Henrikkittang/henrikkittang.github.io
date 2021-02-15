@@ -1,0 +1,48 @@
+.passord_hovedoverskrift{
+  text-align: center;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.passord_index>li>a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.passord_index>li>a:hover{
+  text-decoration: underline;
+}
+
+.passord_avsnitt{
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 20px;
+  background-color: lightgrey;
+}
+
+.passord_avsnitt>h2, .passord_avsnitt>p{
+  text-align: center;
+}
+
+.passord_avsnitt>p{
+  font-size: 25px;
+}
+
+.scroll_btn{
+  position: fixed;
+  background-color: lightgreen;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.scroll_btn>a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+}

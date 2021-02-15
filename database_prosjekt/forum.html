@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Forum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/gif/png" href="bilder/chemistry_bottle.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 601px)" href="style_mobil.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAJA_K3-Sb74CYe3taZgYkFcFIdTb1kHmU",
+            authDomain: "kontaktliste-27427.firebaseapp.com",
+            databaseURL: "https://kontaktliste-27427.firebaseio.com",
+            projectId: "kontaktliste-27427",
+            storageBucket: "kontaktliste-27427.appspot.com",
+            messagingSenderId: "358665673371"
+          };
+          firebase.initializeApp(config);
+        </script>
+    </head>
+    <body>
+
+        <nav class="side_nav">
+            <button type="button" id="toggle_knapp">
+                <img src="bilder/hamburger_icon.png">
+            </button>
+
+            <img src="bilder/chemistry_bottle.png">
+
+            <a href="index.html">Hjem</a>
+            <a href="periodesystem.html">Periodesystemet</a>
+            <a href="login.html">Forum</a>
+            <a href="omregning.html">Kalkulator</a>
+        </nav>
+
+        <main class="forum_main">
+            <h1>Forum</h1>
+
+            <section class="forum_sortering">
+                <button type="button" onclick="forum_sortering('upvotes')">Upvotes</button>
+                <button type="button" onclick="forum_sortering('downvotes')">Downvotes</button>
+                <button type="button" onclick="forum_sortering('alle')">Vis alle</button>
+                <button type="button" onclick="forum_sortering('begrens')">Begrens</button>
+            </section>
+
+            <section class="forum_medlinger">
+
+            </section>
+            <section class="forum_input">
+                <button type="button" id="forum_inpBtn">Send</button>
+                <textarea type="text" rows="4" cols="80" id="forum_inpFelt"></textarea>
+            </section>
+
+            </main>
+        <footer>
+            <section class="footer_logo">
+              <div> <img src="bilder/chemistry_bottle.png"> </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th> <a href="https://www.facebook.com/" target="_blank" class="ikon_link"> <i class="fa fa-facebook-square" > </i> </a> </th>
+                    <th> <a href="https://twitter.com/" target="_blank" class="ikon_link"> <i class="fa fa-twitter-square" ></i> </a> </th>
+                    <th> <a href="https://www.instagram.com/" target="_blank" class="ikon_link"> <i class="fa fa-instagram"></i> </a> </th>
+                  </tr>
+                </thead>
+              </table>
+            </section>
+
+            <section>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Navigasjon</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr> <td class="footer_hendelser"> <a href="index.html">Hjem</a> </td> </tr>
+                  <tr> <td class="footer_hendelser"> <a href="periodesystem.html">Periodesystemet</a> </td> </tr>
+                  <tr> <td class="footer_hendelser"> <a href="login.html">Forum</a> </td> </tr>
+                  <tr> <td class="footer_hendelser"> <a href="omregning.html">Kalkulator</a> </td> </tr>
+                </tbody>
+              </table>
+            </section>
+            
+            <section>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr> <td class="footer_hendelser"> Elias Smithsvei 15 </td> </tr>
+                  <tr> <td class="footer_hendelser"> 1337 Sandvika </td> </tr>
+                  <tr> <td class="footer_hendelser"> 67 57 56 00 </td> </tr>
+                </tbody>
+              </table>
+            </section>
+         </footer>
+
+    <script src="./main.js" charset="utf-8"></script>
+    </body>
+</html>
